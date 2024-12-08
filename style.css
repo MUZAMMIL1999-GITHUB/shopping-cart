@@ -21,9 +21,6 @@ header .title {
     font-size: 1.7rem;
     font-family: sans-serif;
 }
-.cart-icon {
-   
-}
 .cart-icon i {
     font-size: 1.5rem;
     cursor: pointer;
@@ -47,17 +44,17 @@ header .title {
     padding: 20px 0;
 }
 .card {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: lightblue;
+    background-color: rgb(251, 247, 198);
+    border-radius: 10px;
 }
 .cart-image {
     width: 150px;
     height: 156px;
-    background-color: red;
 }
 .cart-image img {
     width: 100%;
@@ -92,3 +89,82 @@ header .title {
     border: none;
     font-size: 16px;
 }
+
+
+/*----------------Cart Tab-------------------------*/
+
+.cart-tab {
+    width: 380px;
+    background-color: rgb(32, 32, 32);
+    position: fixed;
+    inset: 0 0 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 70px 1fr 40px;
+    transform: translateX(400px);
+    transition: all 0.5s ease-in-out;
+}
+.hide-cart {
+    transform: translateX(0);
+}
+.cart-tab h2 {
+    font-family: sans-serif;
+    margin-bottom: 10px;
+    color: rgb(192, 190, 190);
+}
+.added-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.img-sec img {
+    width: 60px;
+    height: 60px;
+}
+.btn-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.btn-area button {
+    font-size: 18px;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+}
+.name h3, .total-price h4 {
+    font-family: sans-serif;
+    color: rgb(192, 190, 190);
+}
+/* .close-btn {
+    background-color: rgb(251, 33, 33);
+}
+.checkout {
+    background-color: orange;
+} */
+ .quantity {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+ }
+ .quantity button {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .quantity span {
+    font-size: 17px;
+    font-weight: bold;
+    color: rgb(192, 190, 190);
+ }
+ .list-cart .added-cart:nth-child(even) {
+    background-color: #eee1;
+ }
