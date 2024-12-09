@@ -51,6 +51,7 @@ header .title {
     align-items: center;
     background-color: rgb(251, 247, 198);
     border-radius: 10px;
+    cursor: pointer;
 }
 .cart-image {
     width: 150px;
@@ -94,7 +95,7 @@ header .title {
 /*----------------Cart Tab-------------------------*/
 
 .cart-tab {
-    width: 380px;
+    width: 400px;
     background-color: rgb(32, 32, 32);
     position: fixed;
     inset: 0 0 0 auto;
@@ -167,4 +168,10 @@ header .title {
  }
  .list-cart .added-cart:nth-child(even) {
     background-color: #eee1;
+ }
+ .list-cart {
+    overflow: auto;
+ }
+ .list-cart::-webkit-scrollbar {
+    width: 0;
  }
