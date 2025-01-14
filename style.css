@@ -39,7 +39,7 @@ header .title {
     background-color: rgb(215, 215, 215);
     margin: auto;
     display: grid;
-    gap: 10px;
+    gap: 20px;
     grid-template-columns: repeat(4, 1fr);
     padding: 20px 0;
 }
@@ -51,6 +51,11 @@ header .title {
     align-items: center;
     background-color: rgb(251, 247, 198);
     border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.card:hover {
+    transform: scale(1.05);
     cursor: pointer;
 }
 .cart-image {
@@ -71,6 +76,7 @@ header .title {
 .cart-title h4 {
     font-family: sans-serif;
     font-size: 18px;
+    text-align: center;
 }
 .cart-title p {
     font-family: sans-serif;
@@ -84,11 +90,14 @@ header .title {
 
 }
 .add-cart-btn button {
-    padding: 5px;
     cursor: pointer;
     outline: none;
     border: none;
     font-size: 16px;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 
