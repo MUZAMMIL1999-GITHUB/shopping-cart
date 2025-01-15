@@ -36,7 +36,7 @@ header .title {
 }
 #product-container {
     width: 70%;
-    background-color: rgb(215, 215, 215);
+    /* background-color: rgb(215, 215, 215); */
     margin: auto;
     display: grid;
     gap: 20px;
@@ -49,7 +49,8 @@ header .title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(251, 247, 198);
+    /* background-color: rgb(251, 247, 198); */
+    background-color: white;
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
@@ -117,6 +118,13 @@ header .title {
 .hide-cart {
     transform: translateX(0);
 }
+.cart-header {
+    /* background-color: gray; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(192, 190, 190);
+}
 .cart-tab h2 {
     font-family: sans-serif;
     margin-bottom: 10px;
@@ -144,7 +152,7 @@ header .title {
     border: none;
     cursor: pointer;
 }
-.name h3, .total-price h4 {
+.name h4, .total-price h4 {
     font-family: sans-serif;
     color: rgb(192, 190, 190);
 }
@@ -183,4 +191,27 @@ header .title {
  }
  .list-cart::-webkit-scrollbar {
     width: 0;
+ }
+
+ @media only screen and (max-width: 1071px) {
+    #product-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+ }
+ 
+ @media only screen and (max-width: 801px) {
+    #product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+ 
+ @media only screen and (max-width: 564px) {
+    #product-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cart-image {
+        width: 170px;
+        height: 190px;
+        /* background-color: red; */
+    }
  }
